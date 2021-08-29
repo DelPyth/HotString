@@ -1,0 +1,27 @@
+class Program
+{
+	constructor(...args)
+	{
+		/* Get info about this project. */
+		this.info = JSON.parse(fileRead(".\\app.json"));
+
+		/* Set up development tools. */
+		this.dev = {};
+		this.dev.debug = {};
+		this.dev.debug.file = fileOpen(".\\debug.log", "w");
+		this.dev.debug.write = (text) => this.debug.writeLine(text);
+
+		/* Call 'destructor' before program closes. */
+		onExit(this.destructor.bind(this));
+
+		this.user = JSON.parse(fileRead(".\\config\\settings.json"));
+
+		return this;
+	}
+
+	destructor(reason, code)
+	{
+		this.dev.debug.write(JSON.stringify({"reason": reason, "code": code}));
+		return null;
+	}
+}

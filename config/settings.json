@@ -1,0 +1,35 @@
+{
+	"vars":
+	{
+		"name": "TopHatCat",
+		"email": "constantjarod@gmail.com",
+		"donate": "paypal.me\\DelPyth"
+	},
+	"strings":
+	[
+		{
+			"input": "lol",
+			"action": [{"func": "send", "args": ["laugh out loud"]}]
+		},
+		{
+			"input": "@tf2",
+			"action": [{"func": "run", "args": ["steam:\/\/rungameid\/440"]}]
+		},
+		{
+			"input": "@vsc",
+			"action": [{"func": "run", "args": ["code"]}]
+		},
+		{
+			"input": "@cmd",
+			"action": [{"func": "run", "args": ["cmd", "{env:userprofile}\\Desktop"]}]
+		},
+		{
+			"input": "@name",
+			"action": [{"func": "run", "args": ["cmd", "{var:username}"]}]
+		},
+		{
+			"input": "@email",
+			"action": [{"func": "run", "args": ["cmd", "{var:email}"]}]
+		}
+	]
+}

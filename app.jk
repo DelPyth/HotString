@@ -1,0 +1,6 @@
+singleInstance('force');
+installKeybdHook();
+persistent();
+
+// Yes I do OOP, bite me.
+const PROG = new Program(...A_Args);

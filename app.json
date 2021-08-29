@@ -1,0 +1,18 @@
+{
+	"name": "HotString",
+	"version": "0.1.0",
+	"description": "Create abbreviations to paste text, do calculations, or heck, execute some code.",
+	"homepage": "https://www.github.com/DelPyth/HotString#readme",
+	"bugs":
+	{
+		"url": "https://github.com/DelPyth/HotString/issues",
+		"email": "constantjarod@gmail.com"
+	},
+	"license": "GNU General Public License v3.0",
+	"author":
+	{
+		"name": "TopHatCat (Jarod C.)",
+		"email": "constantjarod@gmail.com"
+	},
+	"funding": "https://www.paypal.com/DelPyth"
+}
